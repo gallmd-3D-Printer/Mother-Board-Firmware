@@ -19,7 +19,7 @@
       arm_target_device_name="STM32F407VG"
       arm_target_interface_type="SWD"
       c_preprocessor_definitions="STM32F407xx;__STM32F4xx_FAMILY;__STM32F407_SUBFAMILY;ARM_MATH_CM4;FLASH_PLACEMENT=1"
-      c_user_include_directories="$(ProjectDir)/CMSIS_4/CMSIS/Include;$(ProjectDir)/STM32F4xx/CMSIS/Device/Include"
+      c_user_include_directories="$(ProjectDir)/CMSIS_4/CMSIS/Include;$(ProjectDir)/STM32F4xx/CMSIS/Device/Include;/home/matt/Development/code/st/embedded studio/STM32F4MDG"
       debug_register_definition_file="$(ProjectDir)/STM32F40x_Registers.xml"
       debug_target_connection="J-Link"
       gcc_entry_point="Reset_Handler"
@@ -27,6 +27,7 @@
       linker_section_placement_file="$(ProjectDir)/flash_placement.xml"
       macros="DeviceHeaderFile=$(PackagesDir)/STM32F4xx/CMSIS/Device/Include/stm32f4xx.h;DeviceLibraryIdentifier=M4lf;DeviceSystemFile=$(PackagesDir)/STM32F4xx/CMSIS/Device/Source/system_stm32f4xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F4xx/Source/STM32F40x_Vectors.s;DeviceFamily=STM32F4xx;DeviceSubFamily=STM32F407;Target=STM32F407VG;Placement=Flash"
       package_dependencies="STM32F4xx"
+      project_dependencies="STM32F4MDG"
       project_directory=""
       project_type="Executable"
       target_reset_script="Reset();"
@@ -59,24 +60,12 @@
       </file>
     </folder>
     <file file_name="main.cpp" />
-    <file file_name="gpio.h" />
-    <file file_name="reg_access.h" />
-    <configuration Name="Debug" gcc_cplusplus_language_standard="gnu++14" />
-    <file file_name="registers.h" />
-    <file file_name="rcc.h" />
-    <file file_name="reg_access_dynamic.h" />
-    <file file_name="circular_buffer.h" />
-    <file file_name="i2c.cpp" />
-    <file file_name="i2c.h" />
-    <file file_name="interruptable.cpp" />
-    <file file_name="interruptable.h" />
-    <file file_name="interrupts.cpp" />
-    <file file_name="interrupts.h" />
-    <file file_name="usart.cpp" />
-    <file file_name="usart.h" />
-    <file file_name="gpio_config.h" />
+    <configuration Name="Debug" gcc_cplusplus_language_standard="c++14" />
     <file file_name="misc.c" />
     <file file_name="misc.h" />
+    <file file_name="card.h" />
+    <file file_name="rcc_motherboard.h" />
+    <file file_name="rcc_motherboard.cpp" />
   </project>
   <configuration
     Name="Debug"

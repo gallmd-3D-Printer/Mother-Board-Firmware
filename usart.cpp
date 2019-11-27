@@ -40,7 +40,7 @@ int USART::Usart::init()
     if(Usart::baseRegister == USART::BaseRegisters::USART2Base)
   {
       //enable clock
-      dynamic_access<rcc::RCCRegisterType, rcc::RCCRegisterType>::reg_or(rcc::BaseRegisters::RccBaseRegister + rcc::RccAPB1EnableRegister::RegisterOffset,rcc::RccAPB1EnableRegister::USART2Enable);
+      dynamic_access<rcc::RCCRegisterType, rcc::RCCRegisterType>::reg_or(rcc::BaseRegisters::RccBaseRegister + rcc::RccAPB1EnableRegister::RegisterOffset,rcc::RccAPB1EnableRegister::USART3Enable);
       USART::Usart::TXPin = PINS::PIN5;
       USART::Usart::RXPin = PINS::PIN6;
       USART::Usart::TXGPIOBank = GPIOxBaseRegisters::GPIO_D;
@@ -51,7 +51,8 @@ int USART::Usart::init()
     if(Usart::baseRegister == USART::BaseRegisters::USART3Base)
   {
       //enable clock
-      dynamic_access<rcc::RCCRegisterType, rcc::RCCRegisterType>::reg_or(rcc::RccAPB1EnableRegister::RegisterOffset,rcc::RccAPB1EnableRegister::USART3Enable);
+      dynamic_access<rcc::RCCRegisterType, rcc::RCCRegisterType>::reg_or(rcc::BaseRegisters::RccBaseRegister + rcc::RccAPB1EnableRegister::RegisterOffset,rcc::RccAPB1EnableRegister::USART3Enable);
+
       USART::Usart::TXPin = PINS::PIN10;
       USART::Usart::RXPin = PINS::PIN11;
       USART::Usart::TXGPIOBank = GPIOxBaseRegisters::GPIO_B;

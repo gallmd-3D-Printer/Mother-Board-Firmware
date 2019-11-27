@@ -3,6 +3,8 @@
 #include "gpio.h"
 #include "usart.h"
 #include "circular_buffer.h"
+#include "adc.h"
+#include "rcc_motherboard.h"
 
 /* Private function prototypes */
 void Delay(__IO uint32_t nCount);
@@ -14,10 +16,17 @@ int main()
   util::circular_buffer<uint8_t> usartTXBuf(50);
   util::circular_buffer<uint8_t> *txPtr;
   txPtr = &usartTXBuf;
+
+  RCCMotherBoard clock;
+  clock.setClock150MHZ();
   
+  __enable_irq();
+
 
   USART::Usart usbUsart(USART::BaseRegisters::USART3Base, txPtr);
   uint8_t data = 0;
+
+  ADC_INT adc(ADC_MDG::BaseRegisters::ADC1_MDG);
 
 
 //PC14
@@ -77,25 +86,24 @@ int main()
               PullUpPullDown::NoPullUpPullDown,
               AlternateFunction::AF0>statusLED6;
 
-     __enable_irq();
+  
+
   while(1)
   {
-    statusLED.toggle();
-        statusLED1.toggle();
 
-    statusLED2.toggle();
-    statusLED3.toggle();
-    statusLED4.toggle();
-    statusLED5.toggle();
-    statusLED6.toggle();
+
 
     if(!usartTXBuf.empty()){
   
       data = usartTXBuf.get();
       usbUsart.sendBytes(data);
+      
+
     }
 
     Delay(0xFFFF);
+  statusLED.toggle();
+  statusLED1.toggle();
 
 
 
