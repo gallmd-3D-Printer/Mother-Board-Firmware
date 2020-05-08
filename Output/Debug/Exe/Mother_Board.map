@@ -12399,7 +12399,7 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT (((__init_rodata_start__ == __init_rodata_end__) || ((__init_rodata_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .init_rodata is too large to fit in FLASH memory segment)
                 0x0000000008000428                __text_load_start__ = ALIGN (__init_rodata_end__, 0x4)
 
-.text           0x0000000008000428     0x19ac
+.text           0x0000000008000428     0x19d0
                 0x0000000008000428                __text_start__ = .
  *(.text .text.* .glue_7t .glue_7 .gnu.linkonce.t.* .gcc_except_table .ARM.extab* .gnu.linkonce.armextab.*)
  .glue_7        0x0000000008000428        0x0 linker stubs
@@ -12407,265 +12407,265 @@ Linker script and memory map
  .text.abort    0x0000000008000428        0x2 Output/Mother_Board Debug/Obj/thumb_crt0.o
                 0x0000000008000428                abort
  *fill*         0x000000000800042a        0x2 
- .text.main     0x000000000800042c      0x1e4 Output/Mother_Board Debug/Obj/main.o
+ .text.main     0x000000000800042c      0x208 Output/Mother_Board Debug/Obj/main.o
                 0x000000000800042c                main
  .text._Z5Delayj
-                0x0000000008000610       0x20 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000610                Delay(unsigned int)
+                0x0000000008000634       0x20 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000634                Delay(unsigned int)
  .text._ZN14dynamic_accessIjjE6reg_orEjj
-                0x0000000008000630       0x18 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000630                dynamic_access<unsigned int, unsigned int>::reg_or(unsigned int, unsigned int)
+                0x0000000008000654       0x18 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000654                dynamic_access<unsigned int, unsigned int>::reg_or(unsigned int, unsigned int)
  .text._ZN4util15circular_bufferIhEC2Eh
-                0x0000000008000648       0x2c Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000648                util::circular_buffer<unsigned char>::circular_buffer(unsigned char)
-                0x0000000008000648                util::circular_buffer<unsigned char>::circular_buffer(unsigned char)
+                0x000000000800066c       0x2c Output/Mother_Board Debug/Obj/main.o
+                0x000000000800066c                util::circular_buffer<unsigned char>::circular_buffer(unsigned char)
+                0x000000000800066c                util::circular_buffer<unsigned char>::circular_buffer(unsigned char)
  .text._ZN4GPIOILj1073875968ELj8ELj1ELj0ELj1ELj0ELj0EEC2Ev
-                0x0000000008000674       0x80 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000674                GPIO<1073875968u, 8u, 1u, 0u, 1u, 0u, 0u>::GPIO()
-                0x0000000008000674                GPIO<1073875968u, 8u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x0000000008000698       0x80 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000698                GPIO<1073875968u, 8u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x0000000008000698                GPIO<1073875968u, 8u, 1u, 0u, 1u, 0u, 0u>::GPIO()
  .text._ZN4GPIOILj1073874944ELj11ELj2ELj0ELj3ELj0ELj6EEC2Ev
-                0x00000000080006f4       0x80 Output/Mother_Board Debug/Obj/main.o
-                0x00000000080006f4                GPIO<1073874944u, 11u, 2u, 0u, 3u, 0u, 6u>::GPIO()
-                0x00000000080006f4                GPIO<1073874944u, 11u, 2u, 0u, 3u, 0u, 6u>::GPIO()
+                0x0000000008000718       0x80 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000718                GPIO<1073874944u, 11u, 2u, 0u, 3u, 0u, 6u>::GPIO()
+                0x0000000008000718                GPIO<1073874944u, 11u, 2u, 0u, 3u, 0u, 6u>::GPIO()
  .text._ZN4GPIOILj1073874944ELj13ELj2ELj0ELj3ELj0ELj6EEC2Ev
-                0x0000000008000774       0x80 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000774                GPIO<1073874944u, 13u, 2u, 0u, 3u, 0u, 6u>::GPIO()
-                0x0000000008000774                GPIO<1073874944u, 13u, 2u, 0u, 3u, 0u, 6u>::GPIO()
+                0x0000000008000798       0x80 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000798                GPIO<1073874944u, 13u, 2u, 0u, 3u, 0u, 6u>::GPIO()
+                0x0000000008000798                GPIO<1073874944u, 13u, 2u, 0u, 3u, 0u, 6u>::GPIO()
  .text._ZN4GPIOILj1073874944ELj12ELj2ELj0ELj3ELj0ELj6EEC2Ev
-                0x00000000080007f4       0x80 Output/Mother_Board Debug/Obj/main.o
-                0x00000000080007f4                GPIO<1073874944u, 12u, 2u, 0u, 3u, 0u, 6u>::GPIO()
-                0x00000000080007f4                GPIO<1073874944u, 12u, 2u, 0u, 3u, 0u, 6u>::GPIO()
+                0x0000000008000818       0x80 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000818                GPIO<1073874944u, 12u, 2u, 0u, 3u, 0u, 6u>::GPIO()
+                0x0000000008000818                GPIO<1073874944u, 12u, 2u, 0u, 3u, 0u, 6u>::GPIO()
  .text._ZNK4GPIOILj1073875968ELj8ELj1ELj0ELj1ELj0ELj0EE3setEv
-                0x0000000008000874       0x12 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000874                GPIO<1073875968u, 8u, 1u, 0u, 1u, 0u, 0u>::set() const
- *fill*         0x0000000008000886        0x2 
+                0x0000000008000898       0x12 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000898                GPIO<1073875968u, 8u, 1u, 0u, 1u, 0u, 0u>::set() const
+ *fill*         0x00000000080008aa        0x2 
  .text._ZN4GPIOILj1073874944ELj5ELj1ELj0ELj1ELj0ELj0EEC2Ev
-                0x0000000008000888       0x80 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000888                GPIO<1073874944u, 5u, 1u, 0u, 1u, 0u, 0u>::GPIO()
-                0x0000000008000888                GPIO<1073874944u, 5u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x00000000080008ac       0x80 Output/Mother_Board Debug/Obj/main.o
+                0x00000000080008ac                GPIO<1073874944u, 5u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x00000000080008ac                GPIO<1073874944u, 5u, 1u, 0u, 1u, 0u, 0u>::GPIO()
  .text._ZN4GPIOILj1073875968ELj11ELj1ELj0ELj1ELj0ELj0EEC2Ev
-                0x0000000008000908       0x80 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000908                GPIO<1073875968u, 11u, 1u, 0u, 1u, 0u, 0u>::GPIO()
-                0x0000000008000908                GPIO<1073875968u, 11u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x000000000800092c       0x80 Output/Mother_Board Debug/Obj/main.o
+                0x000000000800092c                GPIO<1073875968u, 11u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x000000000800092c                GPIO<1073875968u, 11u, 1u, 0u, 1u, 0u, 0u>::GPIO()
  .text._ZN4GPIOILj1073875968ELj12ELj1ELj0ELj1ELj0ELj0EEC2Ev
-                0x0000000008000988       0x80 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000988                GPIO<1073875968u, 12u, 1u, 0u, 1u, 0u, 0u>::GPIO()
-                0x0000000008000988                GPIO<1073875968u, 12u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x00000000080009ac       0x80 Output/Mother_Board Debug/Obj/main.o
+                0x00000000080009ac                GPIO<1073875968u, 12u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x00000000080009ac                GPIO<1073875968u, 12u, 1u, 0u, 1u, 0u, 0u>::GPIO()
  .text._ZN4GPIOILj1073875968ELj13ELj1ELj0ELj1ELj0ELj0EEC2Ev
-                0x0000000008000a08       0x80 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000a08                GPIO<1073875968u, 13u, 1u, 0u, 1u, 0u, 0u>::GPIO()
-                0x0000000008000a08                GPIO<1073875968u, 13u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x0000000008000a2c       0x80 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000a2c                GPIO<1073875968u, 13u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x0000000008000a2c                GPIO<1073875968u, 13u, 1u, 0u, 1u, 0u, 0u>::GPIO()
  .text._ZN4GPIOILj1073875968ELj14ELj1ELj0ELj1ELj0ELj0EEC2Ev
-                0x0000000008000a88       0x80 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000a88                GPIO<1073875968u, 14u, 1u, 0u, 1u, 0u, 0u>::GPIO()
-                0x0000000008000a88                GPIO<1073875968u, 14u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x0000000008000aac       0x80 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000aac                GPIO<1073875968u, 14u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x0000000008000aac                GPIO<1073875968u, 14u, 1u, 0u, 1u, 0u, 0u>::GPIO()
  .text._ZN4GPIOILj1073875968ELj15ELj1ELj0ELj1ELj0ELj0EEC2Ev
-                0x0000000008000b08       0x80 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000b08                GPIO<1073875968u, 15u, 1u, 0u, 1u, 0u, 0u>::GPIO()
-                0x0000000008000b08                GPIO<1073875968u, 15u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x0000000008000b2c       0x80 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000b2c                GPIO<1073875968u, 15u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x0000000008000b2c                GPIO<1073875968u, 15u, 1u, 0u, 1u, 0u, 0u>::GPIO()
  .text._ZN4GPIOILj1073875968ELj16ELj1ELj0ELj1ELj0ELj0EEC2Ev
-                0x0000000008000b88       0x80 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000b88                GPIO<1073875968u, 16u, 1u, 0u, 1u, 0u, 0u>::GPIO()
-                0x0000000008000b88                GPIO<1073875968u, 16u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x0000000008000bac       0x80 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000bac                GPIO<1073875968u, 16u, 1u, 0u, 1u, 0u, 0u>::GPIO()
+                0x0000000008000bac                GPIO<1073875968u, 16u, 1u, 0u, 1u, 0u, 0u>::GPIO()
  .text._ZN4util15circular_bufferIhE5emptyEv
-                0x0000000008000c08       0x20 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000c08                util::circular_buffer<unsigned char>::empty()
+                0x0000000008000c2c       0x20 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000c2c                util::circular_buffer<unsigned char>::empty()
  .text._ZN4util15circular_bufferIhE3getEv
-                0x0000000008000c28       0x40 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000c28                util::circular_buffer<unsigned char>::get()
+                0x0000000008000c4c       0x40 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000c4c                util::circular_buffer<unsigned char>::get()
  .text._ZNK4GPIOILj1073874944ELj5ELj1ELj0ELj1ELj0ELj0EE6toggleEv
-                0x0000000008000c68       0x12 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000c68                GPIO<1073874944u, 5u, 1u, 0u, 1u, 0u, 0u>::toggle() const
+                0x0000000008000c8c       0x12 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000c8c                GPIO<1073874944u, 5u, 1u, 0u, 1u, 0u, 0u>::toggle() const
  .text._ZNK4GPIOILj1073875968ELj11ELj1ELj0ELj1ELj0ELj0EE6toggleEv
-                0x0000000008000c7a       0x12 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000c7a                GPIO<1073875968u, 11u, 1u, 0u, 1u, 0u, 0u>::toggle() const
+                0x0000000008000c9e       0x12 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000c9e                GPIO<1073875968u, 11u, 1u, 0u, 1u, 0u, 0u>::toggle() const
  .text._ZN10reg_accessIjjLj1073875972ELj0EE6reg_orEv
-                0x0000000008000c8c       0x10 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000c8c                reg_access<unsigned int, unsigned int, 1073875972u, 0u>::reg_or()
+                0x0000000008000cb0       0x10 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000cb0                reg_access<unsigned int, unsigned int, 1073875972u, 0u>::reg_or()
  .text._ZN10reg_accessIjjLj1073874948ELj0EE6reg_orEv
-                0x0000000008000c9c       0x10 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000c9c                reg_access<unsigned int, unsigned int, 1073874948u, 0u>::reg_or()
+                0x0000000008000cc0       0x10 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000cc0                reg_access<unsigned int, unsigned int, 1073874948u, 0u>::reg_or()
  .text._ZN10reg_accessIjjLj1073875988ELj128EE6reg_orEv
-                0x0000000008000cac       0x14 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000cac                reg_access<unsigned int, unsigned int, 1073875988u, 128u>::reg_or()
+                0x0000000008000cd0       0x14 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000cd0                reg_access<unsigned int, unsigned int, 1073875988u, 128u>::reg_or()
  .text._ZN10reg_accessIjjLj1073874964ELj16EE7reg_xorEv
-                0x0000000008000cc0       0x14 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000cc0                reg_access<unsigned int, unsigned int, 1073874964u, 16u>::reg_xor()
+                0x0000000008000ce4       0x14 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000ce4                reg_access<unsigned int, unsigned int, 1073874964u, 16u>::reg_xor()
  .text._ZN10reg_accessIjjLj1073875988ELj1024EE7reg_xorEv
-                0x0000000008000cd4       0x14 Output/Mother_Board Debug/Obj/main.o
-                0x0000000008000cd4                reg_access<unsigned int, unsigned int, 1073875988u, 1024u>::reg_xor()
+                0x0000000008000cf8       0x14 Output/Mother_Board Debug/Obj/main.o
+                0x0000000008000cf8                reg_access<unsigned int, unsigned int, 1073875988u, 1024u>::reg_xor()
  .text.NVIC_PriorityGroupConfig
-                0x0000000008000ce8       0x1c Output/Mother_Board Debug/Obj/misc.o
-                0x0000000008000ce8                NVIC_PriorityGroupConfig
+                0x0000000008000d0c       0x1c Output/Mother_Board Debug/Obj/misc.o
+                0x0000000008000d0c                NVIC_PriorityGroupConfig
  .text.NVIC_Init
-                0x0000000008000d04       0xdc Output/Mother_Board Debug/Obj/misc.o
-                0x0000000008000d04                NVIC_Init
+                0x0000000008000d28       0xdc Output/Mother_Board Debug/Obj/misc.o
+                0x0000000008000d28                NVIC_Init
  .text._ZN14dynamic_accessIjjE7reg_getEj
-                0x0000000008000de0        0xe Output/Mother_Board Debug/Obj/rcc_motherboard.o
-                0x0000000008000de0                dynamic_access<unsigned int, unsigned int>::reg_get(unsigned int)
- *fill*         0x0000000008000dee        0x2 
+                0x0000000008000e04        0xe Output/Mother_Board Debug/Obj/rcc_motherboard.o
+                0x0000000008000e04                dynamic_access<unsigned int, unsigned int>::reg_get(unsigned int)
+ *fill*         0x0000000008000e12        0x2 
  .text._ZN11gpio_config8pinSetupEjjjjjjj
-                0x0000000008000df0      0x160 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
-                0x0000000008000df0                gpio_config::pinSetup(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+                0x0000000008000e14      0x160 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
+                0x0000000008000e14                gpio_config::pinSetup(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
  .text._ZN5USART5UsartC2EjPN4util15circular_bufferIhEE
-                0x0000000008000f50       0x88 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
-                0x0000000008000f50                USART::Usart::Usart(unsigned int, util::circular_buffer<unsigned char>*)
-                0x0000000008000f50                USART::Usart::Usart(unsigned int, util::circular_buffer<unsigned char>*)
+                0x0000000008000f74       0x88 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
+                0x0000000008000f74                USART::Usart::Usart(unsigned int, util::circular_buffer<unsigned char>*)
+                0x0000000008000f74                USART::Usart::Usart(unsigned int, util::circular_buffer<unsigned char>*)
  .text._ZN5USART5Usart4initEv
-                0x0000000008000fd8      0x1f4 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
-                0x0000000008000fd8                USART::Usart::init()
+                0x0000000008000ffc      0x1f4 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
+                0x0000000008000ffc                USART::Usart::init()
  .text._ZN5USART5Usart17registerInterruptEv
-                0x00000000080011cc       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
-                0x00000000080011cc                USART::Usart::registerInterrupt()
+                0x00000000080011f0       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
+                0x00000000080011f0                USART::Usart::registerInterrupt()
  .text._ZN5USART5Usart16handleInterruptsEi
-                0x00000000080011e0       0x56 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
-                0x00000000080011e0                USART::Usart::handleInterrupts(int)
+                0x0000000008001204       0x56 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
+                0x0000000008001204                USART::Usart::handleInterrupts(int)
  .text._ZN5USART5Usart9sendBytesEh
-                0x0000000008001236       0x24 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
-                0x0000000008001236                USART::Usart::sendBytes(unsigned char)
+                0x000000000800125a       0x24 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
+                0x000000000800125a                USART::Usart::sendBytes(unsigned char)
  .text._ZN14dynamic_accessIjjE7reg_setEjj
-                0x000000000800125a       0x12 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
-                0x000000000800125a                dynamic_access<unsigned int, unsigned int>::reg_set(unsigned int, unsigned int)
+                0x000000000800127e       0x12 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
+                0x000000000800127e                dynamic_access<unsigned int, unsigned int>::reg_set(unsigned int, unsigned int)
  .text._ZN14dynamic_accessIjhE7reg_getEj
-                0x000000000800126c       0x10 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
-                0x000000000800126c                dynamic_access<unsigned int, unsigned char>::reg_get(unsigned int)
+                0x0000000008001290       0x10 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
+                0x0000000008001290                dynamic_access<unsigned int, unsigned char>::reg_get(unsigned int)
  .text._ZN4util15circular_bufferIhE3putEh
-                0x000000000800127c       0x72 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
-                0x000000000800127c                util::circular_buffer<unsigned char>::put(unsigned char)
- *fill*         0x00000000080012ee        0x2 
+                0x00000000080012a0       0x72 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
+                0x00000000080012a0                util::circular_buffer<unsigned char>::put(unsigned char)
+ *fill*         0x0000000008001312        0x2 
  .text._ZN9I2CMasterC2Ejjjjj
-                0x00000000080012f0      0x16c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x00000000080012f0                I2CMaster::I2CMaster(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
-                0x00000000080012f0                I2CMaster::I2CMaster(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+                0x0000000008001314      0x16c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x0000000008001314                I2CMaster::I2CMaster(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+                0x0000000008001314                I2CMaster::I2CMaster(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
  .text._ZN9I2CMaster17registerInterruptEv
-                0x000000000800145c       0x4c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x000000000800145c                I2CMaster::registerInterrupt()
+                0x0000000008001480       0x4c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x0000000008001480                I2CMaster::registerInterrupt()
  .text._ZN9I2CMaster9sendBytesEPhhh
-                0x00000000080014a8       0x74 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x00000000080014a8                I2CMaster::sendBytes(unsigned char*, unsigned char, unsigned char)
+                0x00000000080014cc       0x74 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x00000000080014cc                I2CMaster::sendBytes(unsigned char*, unsigned char, unsigned char)
  .text._ZN9I2CMaster10ER_handlerEv
-                0x000000000800151c       0x38 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x000000000800151c                I2CMaster::ER_handler()
+                0x0000000008001540       0x38 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x0000000008001540                I2CMaster::ER_handler()
  .text._ZN9I2CMaster10EV_handlerEv
-                0x0000000008001554      0x10e /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x0000000008001554                I2CMaster::EV_handler()
+                0x0000000008001578      0x10e /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x0000000008001578                I2CMaster::EV_handler()
  .text._ZN9I2CMaster16handleInterruptsEi
-                0x0000000008001662       0x28 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x0000000008001662                I2CMaster::handleInterrupts(int)
- *fill*         0x000000000800168a        0x2 
+                0x0000000008001686       0x28 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x0000000008001686                I2CMaster::handleInterrupts(int)
+ *fill*         0x00000000080016ae        0x2 
  .text._ZN10reg_accessIjjLj1073887296ELj2097152EE6reg_orEv
-                0x000000000800168c       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x000000000800168c                reg_access<unsigned int, unsigned int, 1073887296u, 2097152u>::reg_or()
+                0x00000000080016b0       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x00000000080016b0                reg_access<unsigned int, unsigned int, 1073887296u, 2097152u>::reg_or()
  .text._ZN10reg_accessIjjLj1073887296ELj4194304EE6reg_orEv
-                0x00000000080016a0       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x00000000080016a0                reg_access<unsigned int, unsigned int, 1073887296u, 4194304u>::reg_or()
+                0x00000000080016c4       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x00000000080016c4                reg_access<unsigned int, unsigned int, 1073887296u, 4194304u>::reg_or()
  .text._ZN10reg_accessIjjLj1073887296ELj8388608EE6reg_orEv
-                0x00000000080016b4       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x00000000080016b4                reg_access<unsigned int, unsigned int, 1073887296u, 8388608u>::reg_or()
+                0x00000000080016d8       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x00000000080016d8                reg_access<unsigned int, unsigned int, 1073887296u, 8388608u>::reg_or()
  .text._ZN4GPIOILj1073873920ELj9ELj2ELj1ELj2ELj0ELj4EEC2Ev
-                0x00000000080016c8       0x80 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x00000000080016c8                GPIO<1073873920u, 9u, 2u, 1u, 2u, 0u, 4u>::GPIO()
-                0x00000000080016c8                GPIO<1073873920u, 9u, 2u, 1u, 2u, 0u, 4u>::GPIO()
+                0x00000000080016ec       0x80 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x00000000080016ec                GPIO<1073873920u, 9u, 2u, 1u, 2u, 0u, 4u>::GPIO()
+                0x00000000080016ec                GPIO<1073873920u, 9u, 2u, 1u, 2u, 0u, 4u>::GPIO()
  .text._ZN4GPIOILj1073873920ELj10ELj2ELj1ELj2ELj0ELj4EEC2Ev
-                0x0000000008001748       0x80 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x0000000008001748                GPIO<1073873920u, 10u, 2u, 1u, 2u, 0u, 4u>::GPIO()
-                0x0000000008001748                GPIO<1073873920u, 10u, 2u, 1u, 2u, 0u, 4u>::GPIO()
+                0x000000000800176c       0x80 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x000000000800176c                GPIO<1073873920u, 10u, 2u, 1u, 2u, 0u, 4u>::GPIO()
+                0x000000000800176c                GPIO<1073873920u, 10u, 2u, 1u, 2u, 0u, 4u>::GPIO()
  .text._ZN14dynamic_accessIjjE7reg_notEjj
-                0x00000000080017c8       0x1a /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x00000000080017c8                dynamic_access<unsigned int, unsigned int>::reg_not(unsigned int, unsigned int)
+                0x00000000080017ec       0x1a /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x00000000080017ec                dynamic_access<unsigned int, unsigned int>::reg_not(unsigned int, unsigned int)
  .text._ZN14dynamic_accessIjhE7reg_setEjh
-                0x00000000080017e2       0x18 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x00000000080017e2                dynamic_access<unsigned int, unsigned char>::reg_set(unsigned int, unsigned char)
+                0x0000000008001806       0x18 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x0000000008001806                dynamic_access<unsigned int, unsigned char>::reg_set(unsigned int, unsigned char)
  .text._ZN14dynamic_accessIjjE7reg_andEjj
-                0x00000000080017fa       0x18 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x00000000080017fa                dynamic_access<unsigned int, unsigned int>::reg_and(unsigned int, unsigned int)
+                0x000000000800181e       0x18 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x000000000800181e                dynamic_access<unsigned int, unsigned int>::reg_and(unsigned int, unsigned int)
  .text._ZN14dynamic_accessIjtE6reg_orEjt
-                0x0000000008001812       0x22 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x0000000008001812                dynamic_access<unsigned int, unsigned short>::reg_or(unsigned int, unsigned short)
+                0x0000000008001836       0x22 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x0000000008001836                dynamic_access<unsigned int, unsigned short>::reg_or(unsigned int, unsigned short)
  .text._ZN10reg_accessIjjLj1073873924ELj256EE6reg_orEv
-                0x0000000008001834       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x0000000008001834                reg_access<unsigned int, unsigned int, 1073873924u, 256u>::reg_or()
+                0x0000000008001858       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x0000000008001858                reg_access<unsigned int, unsigned int, 1073873924u, 256u>::reg_or()
  .text._ZN10reg_accessIjjLj1073873924ELj512EE6reg_orEv
-                0x0000000008001848       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x0000000008001848                reg_access<unsigned int, unsigned int, 1073873924u, 512u>::reg_or()
+                0x000000000800186c       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x000000000800186c                reg_access<unsigned int, unsigned int, 1073873924u, 512u>::reg_or()
  .text._ZN9SPIMasterC2Ej
-                0x000000000800185c      0x154 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
-                0x000000000800185c                SPIMaster::SPIMaster(unsigned int)
-                0x000000000800185c                SPIMaster::SPIMaster(unsigned int)
+                0x0000000008001880      0x154 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
+                0x0000000008001880                SPIMaster::SPIMaster(unsigned int)
+                0x0000000008001880                SPIMaster::SPIMaster(unsigned int)
  .text._ZN9SPIMaster7setModeE8spiModes
-                0x00000000080019b0       0xe0 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
-                0x00000000080019b0                SPIMaster::setMode(spiModes)
+                0x00000000080019d4       0xe0 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
+                0x00000000080019d4                SPIMaster::setMode(spiModes)
  .text._ZN9SPIMaster17registerInterruptEv
-                0x0000000008001a90       0x50 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
-                0x0000000008001a90                SPIMaster::registerInterrupt()
+                0x0000000008001ab4       0x50 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
+                0x0000000008001ab4                SPIMaster::registerInterrupt()
  .text._ZN9SPIMaster12setDelayTimeEj
-                0x0000000008001ae0       0x12 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
-                0x0000000008001ae0                SPIMaster::setDelayTime(unsigned int)
+                0x0000000008001b04       0x12 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
+                0x0000000008001b04                SPIMaster::setDelayTime(unsigned int)
  .text._ZN9SPIMaster9sendBytesEPhhh
-                0x0000000008001af2       0x72 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
-                0x0000000008001af2                SPIMaster::sendBytes(unsigned char*, unsigned char, unsigned char)
+                0x0000000008001b16       0x72 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
+                0x0000000008001b16                SPIMaster::sendBytes(unsigned char*, unsigned char, unsigned char)
  .text._ZN9SPIMaster16handleInterruptsEi
-                0x0000000008001b64       0xaa /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
-                0x0000000008001b64                SPIMaster::handleInterrupts(int)
- *fill*         0x0000000008001c0e        0x2 
+                0x0000000008001b88       0xaa /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
+                0x0000000008001b88                SPIMaster::handleInterrupts(int)
+ *fill*         0x0000000008001c32        0x2 
  .text._ZN10reg_accessIjjLj1073887300ELj4096EE6reg_orEv
-                0x0000000008001c10       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
-                0x0000000008001c10                reg_access<unsigned int, unsigned int, 1073887300u, 4096u>::reg_or()
+                0x0000000008001c34       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
+                0x0000000008001c34                reg_access<unsigned int, unsigned int, 1073887300u, 4096u>::reg_or()
  .text._ZN10reg_accessIjjLj1073887296ELj16384EE6reg_orEv
-                0x0000000008001c24       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
-                0x0000000008001c24                reg_access<unsigned int, unsigned int, 1073887296u, 16384u>::reg_or()
+                0x0000000008001c48       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
+                0x0000000008001c48                reg_access<unsigned int, unsigned int, 1073887296u, 16384u>::reg_or()
  .text._ZN10reg_accessIjjLj1073887296ELj32768EE6reg_orEv
-                0x0000000008001c38       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
-                0x0000000008001c38                reg_access<unsigned int, unsigned int, 1073887296u, 32768u>::reg_or()
+                0x0000000008001c5c       0x14 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
+                0x0000000008001c5c                reg_access<unsigned int, unsigned int, 1073887296u, 32768u>::reg_or()
  .text._ZN14dynamic_accessIjjE7reg_xorEjj
-                0x0000000008001c4c       0x18 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
-                0x0000000008001c4c                dynamic_access<unsigned int, unsigned int>::reg_xor(unsigned int, unsigned int)
+                0x0000000008001c70       0x18 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
+                0x0000000008001c70                dynamic_access<unsigned int, unsigned int>::reg_xor(unsigned int, unsigned int)
  .text._ZN13interruptableC2Ev
-                0x0000000008001c64       0x18 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interruptable.o)
-                0x0000000008001c64                interruptable::interruptable()
-                0x0000000008001c64                interruptable::interruptable()
+                0x0000000008001c88       0x18 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interruptable.o)
+                0x0000000008001c88                interruptable::interruptable()
+                0x0000000008001c88                interruptable::interruptable()
  .text.I2C1_EV_IRQHandler
-                0x0000000008001c7c       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
-                0x0000000008001c7c                I2C1_EV_IRQHandler
+                0x0000000008001ca0       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
+                0x0000000008001ca0                I2C1_EV_IRQHandler
  .text.I2C1_ER_IRQHandler
-                0x0000000008001c98       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
-                0x0000000008001c98                I2C1_ER_IRQHandler
+                0x0000000008001cbc       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
+                0x0000000008001cbc                I2C1_ER_IRQHandler
  .text.I2C2_EV_IRQHandler
-                0x0000000008001cb4       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
-                0x0000000008001cb4                I2C2_EV_IRQHandler
+                0x0000000008001cd8       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
+                0x0000000008001cd8                I2C2_EV_IRQHandler
  .text.I2C2_ER_IRQHandler
-                0x0000000008001cd0       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
-                0x0000000008001cd0                I2C2_ER_IRQHandler
+                0x0000000008001cf4       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
+                0x0000000008001cf4                I2C2_ER_IRQHandler
  .text.I2C3_EV_IRQHandler
-                0x0000000008001cec       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
-                0x0000000008001cec                I2C3_EV_IRQHandler
+                0x0000000008001d10       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
+                0x0000000008001d10                I2C3_EV_IRQHandler
  .text.I2C3_ER_IRQHandler
-                0x0000000008001d08       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
-                0x0000000008001d08                I2C3_ER_IRQHandler
+                0x0000000008001d2c       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
+                0x0000000008001d2c                I2C3_ER_IRQHandler
  .text.USART1_IRQHandler
-                0x0000000008001d24       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
-                0x0000000008001d24                USART1_IRQHandler
+                0x0000000008001d48       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
+                0x0000000008001d48                USART1_IRQHandler
  .text.USART2_IRQHandler
-                0x0000000008001d40       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
-                0x0000000008001d40                USART2_IRQHandler
+                0x0000000008001d64       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
+                0x0000000008001d64                USART2_IRQHandler
  .text.USART3_IRQHandler
-                0x0000000008001d5c       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
-                0x0000000008001d5c                USART3_IRQHandler
+                0x0000000008001d80       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
+                0x0000000008001d80                USART3_IRQHandler
  .text.SPI1_IRQHandler
-                0x0000000008001d78       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
-                0x0000000008001d78                SPI1_IRQHandler
+                0x0000000008001d9c       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
+                0x0000000008001d9c                SPI1_IRQHandler
  .text.SPI2_IRQHandler
-                0x0000000008001d94       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
-                0x0000000008001d94                SPI2_IRQHandler
+                0x0000000008001db8       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
+                0x0000000008001db8                SPI2_IRQHandler
  .text.SPI3_IRQHandler
-                0x0000000008001db0       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
-                0x0000000008001db0                SPI3_IRQHandler
+                0x0000000008001dd4       0x1c /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
+                0x0000000008001dd4                SPI3_IRQHandler
  .text.libcpp.__cxa_pure_virtual
-                0x0000000008001dcc        0x8 /usr/share/segger_embedded_studio_for_arm_4.40/lib/libcpp_v7em_fpv4_sp_d16_hard_t_le_eabi.a(new.o)
-                0x0000000008001dcc                __cxa_pure_virtual
-                0x0000000008001dd4                __text_end__ = (__text_start__ + SIZEOF (.text))
-                0x00000000000019ac                __text_size__ = SIZEOF (.text)
-                0x0000000008001dd4                __text_load_end__ = __text_end__
+                0x0000000008001df0        0x8 /usr/share/segger_embedded_studio_for_arm_4.40/lib/libcpp_v7em_fpv4_sp_d16_hard_t_le_eabi.a(new.o)
+                0x0000000008001df0                __cxa_pure_virtual
+                0x0000000008001df8                __text_end__ = (__text_start__ + SIZEOF (.text))
+                0x00000000000019d0                __text_size__ = SIZEOF (.text)
+                0x0000000008001df8                __text_load_end__ = __text_end__
 
 .vfp11_veneer   0x0000000100000000        0x0
  .vfp11_veneer  0x0000000100000000        0x0 linker stubs
@@ -12676,75 +12676,75 @@ Linker script and memory map
 .iplt           0x0000000100000000        0x0
  .iplt          0x0000000100000000        0x0 Output/Mother_Board Debug/Obj/system_stm32f4xx.o
                 0x0000000000000001                . = ASSERT (((__text_start__ == __text_end__) || ((__text_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .text is too large to fit in FLASH memory segment)
-                0x0000000008001dd4                __dtors_load_start__ = ALIGN (__text_end__, 0x4)
+                0x0000000008001df8                __dtors_load_start__ = ALIGN (__text_end__, 0x4)
 
-.dtors          0x0000000008001dd4        0x0
-                0x0000000008001dd4                __dtors_start__ = .
+.dtors          0x0000000008001df8        0x0
+                0x0000000008001df8                __dtors_start__ = .
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.fini_array)
  *(SORT_BY_NAME(.fini_array.*))
-                0x0000000008001dd4                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
+                0x0000000008001df8                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
                 0x0000000000000000                __dtors_size__ = SIZEOF (.dtors)
-                0x0000000008001dd4                __dtors_load_end__ = __dtors_end__
+                0x0000000008001df8                __dtors_load_end__ = __dtors_end__
                 0x0000000000000001                . = ASSERT (((__dtors_start__ == __dtors_end__) || ((__dtors_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .dtors is too large to fit in FLASH memory segment)
-                0x0000000008001dd4                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
+                0x0000000008001df8                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
 
-.ctors          0x0000000008001dd4        0x0
-                0x0000000008001dd4                __ctors_start__ = .
+.ctors          0x0000000008001df8        0x0
+                0x0000000008001df8                __ctors_start__ = .
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
  *(.init_array)
  *(SORT_BY_NAME(.init_array.*))
-                0x0000000008001dd4                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
+                0x0000000008001df8                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
                 0x0000000000000000                __ctors_size__ = SIZEOF (.ctors)
-                0x0000000008001dd4                __ctors_load_end__ = __ctors_end__
+                0x0000000008001df8                __ctors_load_end__ = __ctors_end__
                 0x0000000000000001                . = ASSERT (((__ctors_start__ == __ctors_end__) || ((__ctors_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .ctors is too large to fit in FLASH memory segment)
-                0x0000000008001dd4                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
+                0x0000000008001df8                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
 
-.rodata         0x0000000008001dd4       0x60
-                0x0000000008001dd4                __rodata_start__ = .
+.rodata         0x0000000008001df8       0x60
+                0x0000000008001df8                __rodata_start__ = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0000000008001dd4       0x1f Output/Mother_Board Debug/Obj/main.o
- *fill*         0x0000000008001df3        0x1 
+ .rodata        0x0000000008001df8       0x1f Output/Mother_Board Debug/Obj/main.o
+ *fill*         0x0000000008001e17        0x1 
  .rodata._ZTVN5USART5UsartE
-                0x0000000008001df4       0x10 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
-                0x0000000008001df4                vtable for USART::Usart
+                0x0000000008001e18       0x10 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
+                0x0000000008001e18                vtable for USART::Usart
  .rodata._ZTV9I2CMaster
-                0x0000000008001e04       0x10 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
-                0x0000000008001e04                vtable for I2CMaster
+                0x0000000008001e28       0x10 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+                0x0000000008001e28                vtable for I2CMaster
  .rodata._ZTV9SPIMaster
-                0x0000000008001e14       0x10 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
-                0x0000000008001e14                vtable for SPIMaster
+                0x0000000008001e38       0x10 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
+                0x0000000008001e38                vtable for SPIMaster
  .rodata._ZTV13interruptable
-                0x0000000008001e24       0x10 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interruptable.o)
-                0x0000000008001e24                vtable for interruptable
-                0x0000000008001e34                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
+                0x0000000008001e48       0x10 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interruptable.o)
+                0x0000000008001e48                vtable for interruptable
+                0x0000000008001e58                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
                 0x0000000000000060                __rodata_size__ = SIZEOF (.rodata)
-                0x0000000008001e34                __rodata_load_end__ = __rodata_end__
+                0x0000000008001e58                __rodata_load_end__ = __rodata_end__
 
 .rel.dyn        0x0000000008000000        0x0
  .rel.iplt      0x0000000008000000        0x0 Output/Mother_Board Debug/Obj/system_stm32f4xx.o
                 0x0000000000000001                . = ASSERT (((__rodata_start__ == __rodata_end__) || ((__rodata_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .rodata is too large to fit in FLASH memory segment)
-                0x0000000008001e34                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
+                0x0000000008001e58                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
 
-.ARM.exidx      0x0000000008001e34        0x0
-                0x0000000008001e34                __ARM.exidx_start__ = .
-                0x0000000008001e34                __exidx_start = __ARM.exidx_start__
+.ARM.exidx      0x0000000008001e58        0x0
+                0x0000000008001e58                __ARM.exidx_start__ = .
+                0x0000000008001e58                __exidx_start = __ARM.exidx_start__
  *(.ARM.exidx .ARM.exidx.*)
-                0x0000000008001e34                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
+                0x0000000008001e58                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
                 0x0000000000000000                __ARM.exidx_size__ = SIZEOF (.ARM.exidx)
-                0x0000000008001e34                __exidx_end = __ARM.exidx_end__
-                0x0000000008001e34                __ARM.exidx_load_end__ = __ARM.exidx_end__
+                0x0000000008001e58                __exidx_end = __ARM.exidx_end__
+                0x0000000008001e58                __ARM.exidx_load_end__ = __ARM.exidx_end__
                 0x0000000000000001                . = ASSERT (((__ARM.exidx_start__ == __ARM.exidx_end__) || ((__ARM.exidx_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .ARM.exidx is too large to fit in FLASH memory segment)
-                0x0000000008001e34                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
+                0x0000000008001e58                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
 
-.fast           0x0000000010000000        0x0 load address 0x0000000008001e34
+.fast           0x0000000010000000        0x0 load address 0x0000000008001e58
                 0x0000000010000000                __fast_start__ = .
  *(.fast .fast.*)
                 0x0000000010000000                __fast_end__ = (__fast_start__ + SIZEOF (.fast))
                 0x0000000000000000                __fast_size__ = SIZEOF (.fast)
-                0x0000000008001e34                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
+                0x0000000008001e58                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
                 0x0000000000000001                . = ASSERT (((__fast_load_start__ == __fast_load_end__) || ((__fast_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .fast is too large to fit in FLASH memory segment)
 
 .fast_run       0x0000000010000000        0x0
@@ -12754,14 +12754,14 @@ Linker script and memory map
                 0x0000000000000000                __fast_run_size__ = SIZEOF (.fast_run)
                 0x0000000010000000                __fast_run_load_end__ = __fast_run_end__
                 0x0000000000000001                . = ASSERT (((__fast_run_start__ == __fast_run_end__) || ((__fast_run_end__ - __RAM_segment_start__) <= __RAM_segment_size__)), error: .fast_run is too large to fit in RAM memory segment)
-                0x0000000008001e34                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
+                0x0000000008001e58                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
 
-.data           0x0000000010000000        0x0 load address 0x0000000008001e34
+.data           0x0000000010000000        0x0 load address 0x0000000008001e58
                 0x0000000010000000                __data_start__ = .
  *(.data .data.* .gnu.linkonce.d.*)
                 0x0000000010000000                __data_end__ = (__data_start__ + SIZEOF (.data))
                 0x0000000000000000                __data_size__ = SIZEOF (.data)
-                0x0000000008001e34                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
+                0x0000000008001e58                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
 
 .igot.plt       0x0000000100000000        0x0
  .igot.plt      0x0000000100000000        0x0 Output/Mother_Board Debug/Obj/system_stm32f4xx.o
@@ -12796,16 +12796,16 @@ Linker script and memory map
                 0x0000000000000000                __tbss_size__ = SIZEOF (.tbss)
                 0x0000000010000004                __tbss_load_end__ = __tbss_end__
                 0x0000000000000001                . = ASSERT (((__tbss_start__ == __tbss_end__) || ((__tbss_end__ - __RAM_segment_start__) <= __RAM_segment_size__)), error: .tbss is too large to fit in RAM memory segment)
-                0x0000000008001e34                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
+                0x0000000008001e58                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
 
-.tdata          0x0000000010000004        0x0 load address 0x0000000008001e34
+.tdata          0x0000000010000004        0x0 load address 0x0000000008001e58
                 0x0000000010000004                __tdata_start__ = .
  *(.tdata .tdata.*)
                 0x0000000010000004                __tdata_end__ = (__tdata_start__ + SIZEOF (.tdata))
                 0x0000000000000000                __tdata_size__ = SIZEOF (.tdata)
-                0x0000000008001e34                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
-                0x0000000008001e34                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
-                0x0000000000001e34                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
+                0x0000000008001e58                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
+                0x0000000008001e58                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
+                0x0000000000001e58                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
                 0x0000000000000001                . = ASSERT (((__tdata_load_start__ == __tdata_load_end__) || ((__tdata_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .tdata is too large to fit in FLASH memory segment)
 
 .tdata_run      0x0000000010000004        0x0
@@ -13025,19 +13025,19 @@ OUTPUT(Output/Debug/Exe/Mother_Board.elf elf32-littlearm)
  .debug_macro   0x000000000001a6c2       0x99 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interruptable.o)
  .debug_macro   0x000000000001a75b       0x99 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
 
-.debug_line     0x0000000000000000     0x2bc0
+.debug_line     0x0000000000000000     0x2bcc
  .debug_line    0x0000000000000000      0x2ca Output/Mother_Board Debug/Obj/system_stm32f4xx.o
  .debug_line    0x00000000000002ca      0x1e3 Output/Mother_Board Debug/Obj/thumb_crt0.o
  .debug_line    0x00000000000004ad       0xaa Output/Mother_Board Debug/Obj/STM32F4xx_Startup.o
  .debug_line    0x0000000000000557       0xe7 Output/Mother_Board Debug/Obj/STM32F40x_Vectors.o
- .debug_line    0x000000000000063e      0x84c Output/Mother_Board Debug/Obj/main.o
- .debug_line    0x0000000000000e8a      0x382 Output/Mother_Board Debug/Obj/misc.o
- .debug_line    0x000000000000120c      0x33d Output/Mother_Board Debug/Obj/rcc_motherboard.o
- .debug_line    0x0000000000001549      0x52a /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
- .debug_line    0x0000000000001a73      0x652 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
- .debug_line    0x00000000000020c5      0x595 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
- .debug_line    0x000000000000265a      0x20f /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interruptable.o)
- .debug_line    0x0000000000002869      0x357 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
+ .debug_line    0x000000000000063e      0x858 Output/Mother_Board Debug/Obj/main.o
+ .debug_line    0x0000000000000e96      0x382 Output/Mother_Board Debug/Obj/misc.o
+ .debug_line    0x0000000000001218      0x33d Output/Mother_Board Debug/Obj/rcc_motherboard.o
+ .debug_line    0x0000000000001555      0x52a /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(usart.o)
+ .debug_line    0x0000000000001a7f      0x652 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(i2c_master.o)
+ .debug_line    0x00000000000020d1      0x595 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(spi_master.o)
+ .debug_line    0x0000000000002666      0x20f /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interruptable.o)
+ .debug_line    0x0000000000002875      0x357 /home/matt/Development/code/st/embedded studio/Untethered Prototype/../STM32F4MDG/Output/Debug/Exe/STM32F4MDG.a(interrupts.o)
 
 .debug_str      0x0000000000000000    0x8b073
  .debug_str     0x0000000000000000    0x8324a Output/Mother_Board Debug/Obj/system_stm32f4xx.o

@@ -5,16 +5,16 @@
 #include "rcc_motherboard.h"
 #include "stm32f4xx.h"
 #include "usart.h"
-//#include "i2c.h"
 #include "i2c_master.h"
 #include "spi_master.h"
+
 
 /* Private function prototypes */
 void Delay(__IO uint32_t nCount);
 
 int main() {
 
-  Delay(0xFFFFF);
+  Delay(0xFFF);
   util::circular_buffer<uint8_t> usartTXBuf(50);
   util::circular_buffer<uint8_t> *txPtr;
   txPtr = &usartTXBuf;
@@ -89,8 +89,12 @@ int main() {
   uint8_t setBacklight3[7] = {'|', '-', '|', '+', 0x00, 0x00, 0xFF};
   uint8_t setContrast[2] = {0x18, 0x9F};
 
-  spi.sendBytes(setBacklight,0,7);
-  Delay(0xFFF);
+  spi.sendBytes(setBacklight, 0, 7);
+  Delay(0xFFFFF);
+  spi.sendBytes(setBacklight2, 0, 7);
+  Delay(0xFFFFF);
+  spi.sendBytes(setBacklight3, 0, 7);
+  Delay(0xFFFFF);
   spi.sendBytes(testText, 0, 7);
 
   //inventus Battery
