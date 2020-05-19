@@ -8,7 +8,10 @@ Output/Mother_Board\ Debug/Obj/main.o: \
  /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/reg_access_dynamic.h \
  /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/gpio_config.h \
  /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/gpio.h \
+ /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/rcc_registers.h \
  /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/rcc.h \
+ /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/interrupts.h \
+ /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/interruptable.h \
  /home/matt/Development/code/st/embedded\ studio/Mother_Board/STM32F4xx/CMSIS/Device/Include/stm32f4xx.h \
  /home/matt/Development/code/st/embedded\ studio/Mother_Board/STM32F4xx/CMSIS/Device/Include/stm32f407xx.h \
  /home/matt/Development/code/st/embedded\ studio/Mother_Board/CMSIS_4/CMSIS/Include/core_cm4.h \
@@ -17,10 +20,6 @@ Output/Mother_Board\ Debug/Obj/main.o: \
  /home/matt/Development/code/st/embedded\ studio/Mother_Board/CMSIS_4/CMSIS/Include/core_cmFunc.h \
  /home/matt/Development/code/st/embedded\ studio/Mother_Board/CMSIS_4/CMSIS/Include/core_cmSimd.h \
  /home/matt/Development/code/st/embedded\ studio/Mother_Board/STM32F4xx/CMSIS/Device/Include/system_stm32f4xx.h \
- /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/rcc_registers.h \
- /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/interrupts.h \
- /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/interruptable.h \
- /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/misc.h \
  /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/circular_buffer.h \
  /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/gpio.h \
  /home/matt/Development/code/st/embedded\ studio/Mother_Board/rcc_motherboard.h \
@@ -32,5 +31,8 @@ Output/Mother_Board\ Debug/Obj/main.o: \
  /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/circular_buffer.h \
  /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/i2c_master.h \
  /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/i2c_registers.h \
+ /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/command.h \
  /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/spi_master.h \
- /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/spi_registers.h
+ /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/spi_registers.h \
+ /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/misc.h \
+ /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/command.h

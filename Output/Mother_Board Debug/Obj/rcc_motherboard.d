@@ -10,6 +10,7 @@ Output/Mother_Board\ Debug/Obj/rcc_motherboard.o: \
  /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/gpio.h \
  /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/reg_access.h \
  /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/reg_access_dynamic.h \
+ /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/rcc_registers.h \
  /home/matt/Development/code/st/embedded\ studio/STM32F4MDG/rcc.h \
  /home/matt/Development/code/st/embedded\ studio/Mother_Board/STM32F4xx/CMSIS/Device/Include/stm32f4xx.h \
  /home/matt/Development/code/st/embedded\ studio/Mother_Board/STM32F4xx/CMSIS/Device/Include/stm32f407xx.h \
