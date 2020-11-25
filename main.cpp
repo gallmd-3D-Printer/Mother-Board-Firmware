@@ -1,15 +1,15 @@
 /* Includes */
 #include "Peripherals/adc.h"
-#include "Utility/circular_buffer.h"
-#include "Utility/command.h"
 #include "Peripherals/gpio.h"
 #include "Peripherals/i2c_master.h"
-#include "rcc_motherboard.h"
 #include "Peripherals/spi_master.h"
-#include "stm32f4xx.h"
 #include "Peripherals/usart.h"
+#include "Utility/circular_buffer.h"
+#include "Utility/command.h"
 #include "console.h"
 #include "pins.h"
+#include "rcc_motherboard.h"
+#include "stm32f4xx.h"
 
 /* Private function prototypes */
 void Delay(__IO uint32_t nCount);
@@ -17,7 +17,6 @@ void Delay(__IO uint32_t nCount);
 int main() {
 
   BoardPins boardPins;
-
 
   Console testConsole(&boardPins);
   testConsole.sayHello();
@@ -34,7 +33,6 @@ int main() {
       GPIOxBaseRegisters::GPIO_B);
 
   __enable_irq();
-
 
   uint8_t data = 0;
 
@@ -59,6 +57,8 @@ int main() {
   uint8_t i2cData[3];
   i2cData[0] = 0x7CU;
   i2cData[1] = 0x2DU;
+  i2cData[3] = data;
+  i2c.sendBytes(i2cData, displayAddress, 3);
 
   uint8_t testPacket[8];
   uint8_t packetCount = 0;
@@ -66,26 +66,6 @@ int main() {
   uint32_t delayCount = 0;
 
   while (1) {
-
-//    if (!usartTXBuf.empty()) {
-//
-//      data = usartTXBuf.get();
-//      usbUsart.sendBytes(data);
-//
-//      testPacket[packetCount] = data;
-//      packetCount++;
-//
-//      if(packetCount == 7){
-//        if(testPacket[7] == 0x40U){
-//
-//          statusLED2.toggle();
-//         }
-//          packetCount = 0;
-//         }
-//
-//      i2cData[3] = data;
-//      //      i2c.sendBytes(i2cData, displayAddress, 3);
-//    }
 
     if (delayCount == 0xFFFFF) {
       boardPins.statusLED.toggle();
