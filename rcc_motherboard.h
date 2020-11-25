@@ -2,10 +2,10 @@
 #define RCC_MOTHERBOARD_H_
 
 
-#include "rcc_registers.h"
-#include "reg_access.h"
-#include "reg_access_dynamic.h"
-#include "gpio_config.h"
+#include "Registers/rcc_registers.h"
+#include "Utility/reg_access.h"
+#include "Utility/reg_access_dynamic.h"
+#include "Peripherals/gpio_config.h"
 #include "stm32f4xx.h"
 
 class RCCMotherBoard

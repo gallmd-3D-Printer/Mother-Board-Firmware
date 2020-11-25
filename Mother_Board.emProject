@@ -66,6 +66,9 @@
     <file file_name="card.h" />
     <file file_name="rcc_motherboard.h" />
     <file file_name="rcc_motherboard.cpp" />
+    <file file_name="console.h" />
+    <file file_name="console.cpp" />
+    <file file_name="pins.h" />
   </project>
   <configuration
     Name="Debug"
@@ -78,4 +81,75 @@
     gcc_debugging_level="None"
     gcc_omit_frame_pointer="Yes"
     gcc_optimization_level="Level 1" />
+  <project Name="STM32F4MDG">
+    <configuration
+      Name="Common"
+      Placement="Flash"
+      Target="STM32F407VE"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_interwork="No"
+      arm_simulator_memory_simulation_parameter="ROM;0x08000000;0x00080000;RAM;0x10000000;0x00010000;RAM;0x20000000;0x00020000"
+      arm_target_debug_interface_type="ADIv5"
+      arm_target_device_name="STM32F407VE"
+      arm_target_interface_type="SWD"
+      c_user_include_directories="$(PackagesDir)/CMSIS_4/CMSIS/Include"
+      debug_register_definition_file="$(PackagesDir)/STM32F4xx/XML/STM32F40x_Registers.xml"
+      debug_target_connection="J-Link"
+      gcc_cplusplus_language_standard="gnu++17"
+      linker_memory_map_file="$(PackagesDir)/STM32F4xx/XML/STM32F407VE_MemoryMap.xml"
+      linker_section_placement_file="$(StudioDir)/targets/Cortex_M/flash_placement.xml"
+      macros="DeviceHeaderFile=$(PackagesDir)/STM32F4xx/CMSIS/Device/Include/stm32f4xx.h;DeviceLibraryIdentifier=M4lf;DeviceSystemFile=$(PackagesDir)/STM32F4xx/CMSIS/Device/Source/system_stm32f4xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F4xx/Source/STM32F40x_Vectors.s;DeviceFamily=STM32F4xx;DeviceSubFamily=STM32F407"
+      package_dependencies="STM32F4xx"
+      project_directory="../STM32F4MDG"
+      project_type="Library"
+      property_groups_file_path="$(PackagesDir)/STM32F4xx/XML/property_groups.xml"
+      target_reset_script="Reset();"
+      target_trace_initialize_script="EnableTrace(&quot;$(TraceInterfaceType)&quot;)" />
+    <folder Name="Registers">
+      <file file_name="Registers/usart_registers.h" />
+      <file file_name="Registers/adc_registers.h" />
+      <file file_name="Registers/nvic_registers.h" />
+      <file file_name="Registers/spi_registers.h" />
+      <file file_name="Registers/registers.h" />
+      <file file_name="Registers/rcc_registers.h" />
+      <file file_name="Registers/i2c_registers.h" />
+    </folder>
+    <folder Name="Peripherals">
+      <file file_name="Peripherals/adc.cpp" />
+      <file file_name="Peripherals/adc.h" />
+      <file file_name="Peripherals/gpio_config.h" />
+      <file file_name="Peripherals/gpio.h" />
+      <file file_name="Peripherals/i2c.cpp" />
+      <file file_name="Peripherals/i2c.h" />
+      <file file_name="Peripherals/i2c_master_blk.cpp" />
+      <file file_name="Peripherals/i2c_master_blk.h" />
+      <file file_name="Peripherals/i2c_master.cpp" />
+      <file file_name="Peripherals/i2c_master.h" />
+      <file file_name="Peripherals/i2c_old.h" />
+      <file file_name="Peripherals/rcc.h" />
+      <file file_name="Peripherals/spi.h" />
+      <file file_name="Peripherals/spi_master.cpp" />
+      <file file_name="Peripherals/spi_master.h" />
+      <file file_name="Peripherals/usart.cpp" />
+      <file file_name="Peripherals/usart.h" />
+    </folder>
+    <folder Name="Utility">
+      <file file_name="Utility/circular_buffer.h" />
+      <file file_name="Utility/command.cpp" />
+      <file file_name="Utility/command.h" />
+      <file file_name="Utility/interruptable.cpp" />
+      <file file_name="Utility/interruptable.h" />
+      <file file_name="Utility/interrupts.cpp" />
+      <file file_name="Utility/interrupts.h" />
+      <file file_name="Utility/misc.c" />
+      <file file_name="Utility/misc.h" />
+      <file file_name="Utility/reg_access_dynamic.h" />
+      <file file_name="Utility/reg_access.h" />
+      <file file_name="Utility/util.h" />
+    </folder>
+  </project>
 </solution>

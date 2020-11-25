@@ -3,8 +3,8 @@
 // *                        The Embedded Experts                        *
 // **********************************************************************
 // *                                                                    *
-// *            (c) 2014 - 2019 SEGGER Microcontroller GmbH             *
-// *            (c) 2001 - 2019 Rowley Associates Limited               *
+// *            (c) 2014 - 2020 SEGGER Microcontroller GmbH             *
+// *            (c) 2001 - 2020 Rowley Associates Limited               *
 // *                                                                    *
 // *           www.segger.com     Support: support@segger.com           *
 // *                                                                    *
@@ -239,6 +239,7 @@ _start:
   bl memory_set
 #endif /* #ifdef INITIALIZE_TCM_SECTIONS */
 
+#if !defined(__HEAP_SIZE__) || (__HEAP_SIZE__)
   /* Initialize the heap */
   ldr r0, = __heap_start__
   ldr r1, = __heap_end__
@@ -249,11 +250,15 @@ _start:
   str r2, [r0]
   str r1, [r0, #4] 
 1:
+#endif
 
 #ifdef INITIALIZE_USER_SECTIONS
   ldr r2, =InitializeUserMemorySections
   blx r2
 #endif
+
+  .type start, function
+start:
 
   /* Call constructors */
   ldr r0, =__ctors_start__
@@ -274,8 +279,6 @@ ctor_end:
   mov lr, r0
   mov r12, sp
 
-  .type start, function
-start:
   /* Jump to application entry point */
 #ifdef FULL_LIBRARY
   movs r0, #ARGSSPACE
@@ -302,7 +305,7 @@ dtor_loop:
   cmp r0, r1
   beq dtor_end
   ldr r2, [r0]
-  add r0, #4
+  adds r0, #4
   push {r0-r1}
   blx r2
   pop {r0-r1}
