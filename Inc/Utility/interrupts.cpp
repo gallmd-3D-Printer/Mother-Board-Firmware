@@ -1,7 +1,7 @@
 #include "interrupts.h"
 
 //array of pointers to objects that system interrupt functions will call
-interruptable * handlerPointers[sizeof(peripheralInterrupts)];
+interruptable * handlerPointers[26];
 
 
 //system interrupt calls

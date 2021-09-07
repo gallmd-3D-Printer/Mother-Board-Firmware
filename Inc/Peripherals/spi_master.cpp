@@ -44,7 +44,7 @@ void SPIMaster::init() {
 
 	//register interrupt
 	//  dynamic_access<SPIRegisterType, SPIRegisterType>::reg_or(controlRegister2, (CR2::ERRIE | CR2::RXNEIE | CR2::TXEIE));
-//	NVIC_Init(&NVIC_InitStructure);
+	NVIC_Init(&NVIC_InitStructure);
 	SPIMaster::registerInterrupt();
 
 	//default to MODE0

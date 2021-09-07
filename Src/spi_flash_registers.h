@@ -60,11 +60,7 @@ constexpr uint8_t resetDevice = 0x99U;
 
 namespace CommandArrays {
 
-std::array<uint8_t, 1> writeEnableCommand { FlashCommands::writeEnable };
-std::array<uint8_t, 4> readIDCommand { FlashCommands::readID, 0x00, 0x01, 0x00 };
-std::array<uint8_t, 10> writeDataCommand { FlashCommands::pageProgram, 0x00, 0x00,
-		0x00, 0x00, 0xFF, 0x00, 0xFF, 0x00, 0xFF };
-std::array<uint8_t, 4> readDataCommand { FlashCommands::readData, 0x00, 0x00, 0x00 };
+
 
 }
 

@@ -1,22 +1,25 @@
 #ifndef SPI_MASTER_H_
 #define SPI_MASTER_H_
 
-#include "../Registers/spi_registers.h"
-#include "../Utility/reg_access.h"
-#include "../Utility/reg_access_dynamic.h"
+#include "spi_registers.h"
+#include "reg_access.h"
+#include "reg_access_dynamic.h"
 #include "gpio.h"
 #include "gpio_config.h"
-#include "../Registers/rcc_registers.h"
-#include "../Utility/interrupts.h"
-#include "../Utility/interruptable.h"
-#include "../Utility/misc.h"
-#include "../Utility/util.h"
+#include "rcc_registers.h"
+#include "interrupts.h"
+#include "interruptable.h"
+#include "misc.h"
+#include "util.h"
 #include <array>
 #include <vector>
-#include "../Utility/circular_buffer.h"
-#include "../Src/board_pins.h"
-#include "../CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"
+#include "circular_buffer.h"
+#include "board_pins.h"
 
+
+
+
+#include "stm32f4xx.h"
 
 enum lsbDirection
 {
